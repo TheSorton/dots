@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+wid=$(xdo id -m -a "bar") && xdo above -t "$(xdo id -N Bspwm -n root | sort | head -n 1)" "$wid"
