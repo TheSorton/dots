@@ -13,12 +13,17 @@ set expandtab
 
 "" Vim-Plug
 call plug#begin('~/.vim/plugged')
+
 Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-sensible'
+Plug 'deviantfero/wpgtk.vim'
 Plug 'tpope/vim-fugitive'
-Plug 'dylanaraps/wal.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'w0rp/ale'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 call plug#end()
 
 """ Splits
@@ -43,7 +48,7 @@ map <C-a> :NERDTreeToggle<CR>
 
 """ Colorscheme
 let base16colorspace=256  " Access colors present in 256 colorspace
-colorscheme wal
+colorscheme wpgtkAlt
 if filereadable(expand("~/.vimrc_background"))
           let base16colorspace=256
             source ~/.vimrc_background
@@ -58,8 +63,18 @@ set clipboard=unnamedplus
 "" have yank and paste use above clipboard
 noremap <Leader>y "*y
 noremap <Leader>p "*p
-noremap <Leader>Y "+y
-noremap <Leader>P "+p
 
 """ Clear buffer
 noremap <F8> :1,$d<CR>
+
+""" javascript
+
+autocmd FileType javascript set formatprg=prettier\ --stdin
+autocmd Filetype javascript setlocal ts=2 sw=2 sts=2 noexpandtab
+
+let g:ale_fixers = {
+ \ 'javascript': ['eslint']
+ \ }
+let g:ale_fix_on_save = 1
+
+au TermOpen * setlocal nonumber norelativenumber

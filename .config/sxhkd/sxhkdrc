@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	termite
+	alacritty
 
 # program launcher
 super + d
@@ -142,31 +142,16 @@ super + {_,shift +}x
 # misc keys
 #
 XF86AudioRaiseVolume
-	pactl set-sink-volume 1 +5%
+	pactl set-sink-volume 0 +5%
 
 XF86AudioLowerVolume
-	pactl set-sink-volume 1 -5%
+	pactl set-sink-volume 0 -5%
 
-XF86AudioPlay
-    mpc toggle
+XF86AudioMute
+    pactl set-sink-mute 0 toggle
 
-XF86AudioNext
-    mpc next
+super + brace{left,right}
+    playerctl {previous, next}
 
-XF86AudioPrev
-    mpc prev
-
-XF86MonBrightnessUp
-    xbacklight -inc 20
-
-XF86MonBrightnessDown
-    xbacklight -dec 20
-
-XF86Launch1
-    $HOME/.scripts/touchpad.sh
-
-XF86ScreenSaver
-    i3lock -c 000000
-
-super + m
-    mpdc
+super + P
+    playerctl play-pause
