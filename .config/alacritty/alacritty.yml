@@ -1,1 +1,42 @@
-/home/nyx/.config/wpg/templates/alacritty.yml
+window:
+  padding:
+    x: 10
+    y: 10
+    dynamic_title: true
+font:
+  normal:
+    family: Iosevka Custom
+    style: Book
+  size: 11.0
+colors:
+  primary:
+    background: "#1a1a1a"
+    foreground: '#ebdbb2'
+  cursor:
+    text:       '#edbbb2'
+    cursor:     '#edbbb2'
+  normal:
+    black:      "#1a1a1a"
+    red:        "#a53c2c"
+    green:      "#588156"
+    yellow:     "#725237"
+    blue:       "#50918b"
+    magenta:    "#91506d"
+    cyan:       "#84b29c"
+    white:      "#ebdbb2"
+  bright:
+    black:      "#1a1a1a"
+    red:        "#a53c2c"
+    green:      "#588156"
+    yellow:     "#725237"
+    blue:       "#50918b"
+    magenta:    "#91506d"
+    cyan:       "#84b29c"
+    white:      "#ebdbb2"
+background_opacity: 1
+selection:
+  save_to_clipboard: false
+cursor:
+  style: Underline
+  unfocused_hollow: false
+live_config_reload: true
