@@ -1,19 +1,34 @@
 [colors]
-${colors.(color, background, foreground, etc)}
-color0 = ${xrdb:color0:#222}
-color1 = ${xrdb:color1:#222}
-color2 = ${xrdb:color2:#222}
-color3 = ${xrdb:color3:#222} 
-color4 = ${xrdb:color4:#222} 
-color5 = ${xrdb:color5:#222} 
-color6 = ${xrdb:color6:#222}
-color7 = ${xrdb:color7:#222} 
-color8 = ${xrdb:color8:#222} 
-color9 = ${xrdb:color9:#222} 
-color10 = ${xrdb:color10:#222}
-color11 = ${xrdb:color11:#222} 
-color12 = ${xrdb:color12:#222}
-color13 = ${xrdb:color13:#222}
-color14 = ${xrdb:color14:#222}
-color15 = ${xrdb:color15:#222}
+color0 =  #1a1a1a
+color1 =  #a53c2c
+color2 =  #588156
+color3 =  #725237
+color4 =  #50918b
+color5 =  #91506d
+color6 =  #84b29c
+color7 =  #ebdbb2
+color8 =  #1a1a1a
+color9 =  #a53c2c
+color10 = #588156
+color11 = #725237
+color12 = #50918b
+color13 = #91506d
+color14 = #84b29c
+color15 = #ebdbb2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

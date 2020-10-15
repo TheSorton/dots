@@ -24,7 +24,8 @@ foreground = ${colors.color7}
 line-size = 3
 line-color = #f00
 
-border-size = 2
+border-size = 0
+border-bottom-size = 2
 border-color = ${colors.color1}
 
 padding-left = 1
@@ -33,8 +34,9 @@ padding-right = 1
 ;module-margin-left = 1
 ;module-margin-right = 1
 
-font-0 = xos4 Terminus:style=Regular:size=13;2
-font-1 = Wuncon Siji:size=13;2.5
+font-0 = Iosevka Custom:style=Bold:size=12;1
+font-1 = Font Awesome 5 Free:style=Solid:size=10;0
+font-2 = Font Awesome 5 Brands:style=Regular:size=10;0
 
 modules-left = spotify spotify-prev spotify-play-pause spotify-next
 modules-center = title 

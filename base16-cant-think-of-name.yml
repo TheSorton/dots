@@ -1,0 +1,17 @@
+scheme: "Nyx"
+base00: "1a1a1a" #----
+base01: "242424" # ---
+base02: "474747" # --
+base03: "4f4f4f" # -
+base04: "1a1a1a" # +
+base05: "ebdbb2" # ++
+base06: "1a1a1a" # +++
+base07: "ebdbb2" # ++++
+base08: "a53c2c" # red
+base09: "A45519" # orange
+base0A: "A88B0B" # yellow
+base0B: "588156" # green
+base0C: "84b29c" # aqua/cyan
+base0D: "50918b" # blue
+base0E: "91506d" # purple
+base0F: "725237" # brown
